@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Form Table</title>
+	<link rel="stylesheet" href="style-form.css"/>
+</head>
+<body>
+	<section>
+		<form action="#" method="post">
+			<table>
+				<caption>Form Table</caption>
+				<tr>
+					<td><label for="companyId"><span>*</span> Company:</label></td>
+					<td><input id="companyId" type="text" name="company"/></td>
+				</tr>
+				<tr>
+					<td><label for="firstNameId"><span>*</span> First Name:</label></td>
+					<td><input id="firstNameId" type="text" name="firstName"/></td>
+				</tr>
+				<tr>
+					<td><label for="lastNameId"><span>*</span> Last Name:</label></td>
+					<td><input id="lastNameId" type="text" name="lastName"/></td>
+				</tr>
+				<tr>
+					<td><label for="emailId"><span>*</span> Email Address:</label></td>
+					<td><input id="emailId" type="text" name="email"/></td>
+				</tr>
+				<tr>
+					<td><label for="titleId"><span>*</span>Title:</label></td>
+					<td><input id="titleId" type="text" name="title"/></td>
+				</tr>
+				<tr>
+					<td><label for="phoneId"><span>*</span>Phone:</label></td>
+					<td><input id="phoneId" type="text" name="phone"/></td>
+				</tr>
+				<tr>
+					<td>
+						<label class="pL" for="cregistarionId">Cancel Registration:</label>
+					</td>
+					<td><input id="cregistarionId" type="checkbox" checked="checked" name="cancelRegistartion"/></td>
+				</tr>
+				<tr>
+					<td><label><span>*</span> 252 Training Session 2010:</label></td>
+					<td>
+						<select>
+							<option value="Select date1">-- Select a date --</option>
+							<option value="Select date2">19.10.2010</option>
+							<option value="Select date3">18.10.2010</option>
+							<option value="Select date4">17.10.2010</option>
+							<option value="Select date5">16.10.2010</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="radio-box">
+					<td><label><span>*</span> Job Function:</label></td>
+					<td>
+						<label>
+							<input type="radio" name="jobFuntion" value="jobFuntion1"/>
+							<span>Campaign Management</span>
+						</label>
+						<label>
+							<input type="radio" name="jobFuntion" value="jobFuntion2"/>
+							<span>CRM Administration</span>
+						</label>
+						<label>
+							<input type="radio" name="jobFuntion" value="jobFuntion3"/>
+							<span>Email Deployment</span>
+						</label>
+						<label>
+							<input type="radio" name="jobFuntion" value="jobFuntion4"/>
+							<span>Partner</span>
+						</label>
+						<label>
+							<input type="radio" name="jobFuntion" value="jobFuntion5"/>
+							<span>Employee</span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label class="pL" for="dietaryRequirements">Dietary Requirements:</label></td>
+					<td><input id="dietaryRequirements" type="text" name="dietaryRequirements"/></td>
+				</tr>
+				<tr>
+					<td><label class="pL" for="expectations">Expectations?:</label></td>
+					<td>
+						<textarea id="expectations" name="expectations" cols="28" rows="8"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button type="submit">Submit</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</section>
+</body>
+</html>
