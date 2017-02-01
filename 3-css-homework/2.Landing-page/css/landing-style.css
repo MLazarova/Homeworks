@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font: 400 14px/1.2 'Roboto',sans-serif;
+	background-color: #fff;
+	color: #333;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	margin: 0;
+	font-size: 62px;
+}
+h2 {
+	margin: 0 0 15px;
+	font-size: 33px;
+}
+header {
+	border-bottom: 1px solid #5a5a5a;
+	background: #1a1a1a;
+	background: -webkit-linear-gradient(#222,#1a1a1a,#000);
+	background: -o-linear-gradient(#222,#1a1a1a,#000);
+	background: -moz-linear-gradient(#222,#1a1a1a,#000);
+	background: linear-gradient(#222,#1a1a1a,#000);
+}
+.wrapper {
+	margin: 0 auto;
+	width: 980px;
+}
+.sub-header {
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+.button {
+	padding: 8px 13px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #c2c2c2;
+	border-radius: 4px;
+	background: #f1f1f1;
+	background: -webkit-linear-gradient(#fefefe,#f1f1f1,#e7e7e7);
+	background: -o-linear-gradient(#fefefe,#f1f1f1,#e7e7e7);
+	background: -moz-linear-gradient(#fefefe,#f1f1f1,#e7e7e7);
+	background: linear-gradient(#fefefe,#f1f1f1,#e7e7e7);
+	color: #333;
+	cursor: pointer;
+}
+.button:hover {
+	background: #f1f1f1;
+	background: -webkit-linear-gradient(#e7e7e7,#f1f1f1,#fefefe);
+	background: -o-linear-gradient(#e7e7e7,#f1f1f1,#fefefe);
+	background: -moz-linear-gradient(#e7e7e7,#f1f1f1,#fefefe);
+	background: linear-gradient(#e7e7e7,#f1f1f1,#fefefe);
+}
+.button:active {
+	background: #c2c2c2;
+}
+.table {
+	display: table;
+	width: 100%;
+}
+.flex {
+	width: 1%;
+}
+input {
+	border: 1px solid #cacaca;
+	border-radius: 4px;
+	padding: 8px 7px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 145px;
+	box-shadow: inset -0.5px 1px 1px rgba(202,202,202,0.5);
+	background: #fff;
+	font-size: 14px;
+}
+:focus {
+	outline: none;
+}
+::-webkit-input-placeholder {font-size: 14px;color: #a9a9a9;}
+::-moz-placeholder {font-size: 14px;color: #a9a9a9;}
+:-ms-input-placeholder {font-size: 14px;color: #a9a9a9;}
+::placeholder {font-size: 14px;color: #a9a9a9;}
+header .logo {
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 21px;
+	color: #979797;
+}
+header .logo a {
+	font-size: 21px;
+	color: #979797;
+}
+header nav, header nav ul li, header nav ul li a {
+	display :inline-block;
+	vertical-align: middle;
+}
+header nav ul li a {
+	padding: 15px;
+	color: #979797;
+}
+header nav ul li a:hover, header nav ul li a.active {
+	background-color: #111;
+	color: #fff;
+}
+.arrow-icon::after {
+	content: '';
+    margin-left: 5px;
+    border-top: 5px solid #979797;
+    border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+}
+header nav ul li a:hover .arrow-icon::after {
+	border-top: 5px solid #fff;
+}
+header .login-form {
+	margin-top: 6px;
+	display:inline-block;
+	vertical-align: middle;
+	float: right;
+	clear: both;
+}
+.introduction .wrapper {
+	margin: 20px auto 45px;
+	padding: 70px 60px;
+	border-radius: 5px;
+	background: #eee;
+}
+.introduction .wrapper .button {
+	padding: 10px 20px;
+	border-color: #377abe;
+	font-size: 19px;
+	background: #1069c9;
+	background: -webkit-linear-gradient(#168ccb,#1069c9,#0043c2);
+	background: -o-linear-gradient(#168ccb,#1069c9,#0043c2);
+	background: -moz-linear-gradient(#168ccb,#1069c9,#0043c2);
+	background: linear-gradient(#168ccb,#1069c9,#0043c2);
+	color: #fff;
+}
+.introduction .wrapper .button:hover {
+	background: #1069c9;
+	background: -webkit-linear-gradient(#0043c2,#1069c9,#168ccb);
+	background: -o-linear-gradient(#0043c2,#1069c9,#168ccb);
+	background: -moz-linear-gradient(#0043c2,#1069c9,#168ccb);
+	background: linear-gradient(#0043c2,#1069c9,#168ccb);
+}
+.introduction .wrapper .button:active {
+	background: #377abe;
+}
+.additional-info .wrapper {
+	margin-bottom: 30px;
+}
+.additional-info .wrapper .table article {
+	display: table-cell;
+	width: 33%	;
+}
+.additional-info .wrapper .table article .test {
+	display: inline-block;
+	height: 100%;
+}
+.additional-info .wrapper .table article + article {
+	padding-left: 25px;
+}
+.additional-info .wrapper .table article p {
+	margin: 0 0 15px;
+}
+footer .wrapper {
+	border-top: 1px solid #efefef;
+	padding: 25px 0;
+}

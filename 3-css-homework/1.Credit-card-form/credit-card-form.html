@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Credit Card Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<header>
+		<h1>Credit Card Form</h1>
+	</header>
+	<section>
+		<form class="credit-card-form" action="#" method="post">
+			<div class="row">
+				<input type="text" name="cardNumber" placeholder="Enter Card Number"/>
+			</div>
+			<div class="row table card-info">
+				<span class="table-cell">
+					<label for="expiryMonth">Expiry Month</label>
+					<input id="expiryMonth" type="text" name="expiryMonth" placeholder="MM"/>
+				</span>
+				<span class="table-cell">
+					<label for="expiryYear">Expiry Year</label>
+					<input id="expiryYear" type="text" name="expiryYear" placeholder="YY"/>
+				</span>
+				<span class="table-cell">
+					<label for="cvv">CCV</label>
+					<input id="cvv" type="text" name="cvv" placeholder="CCV"/>
+				</span>
+				<span class="table-cell">
+					<i class="card-icon"></i>
+				</span>
+			</div>
+			<div class="row">
+				<input type="text" name="cardName" placeholder="Name on the Card"/>
+			</div>
+			<div class="row">
+				<input id="saveDetails" type="checkbox" checked="checked" name="saveDetails"/>
+				<label for="saveDetails">Save details for fast payments <a href="#">learn how ?</a></label>
+			</div>
+			<div class="button-section table">
+				<div class="table-cell">
+					<button class="button red">Cancel</button>
+				</div>
+				<div class="table-cell">
+					<button class="button yellow">Pay now</button>
+				</div>
+			</div>
+		</form>
+	</section>
+</body>
+</html>
