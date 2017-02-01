@@ -1,0 +1,65 @@
+﻿1. Напишете скрипт, който проверява дали в масив от цели числа всички числа са НЕОТРИЦАТЕЛНИ.
+
+Решение:
+let array = [-21,6,4,9,69];
+let allPositive = true;
+for (let i = 0; i < array.length; i++) {	
+	if (array[i] < 0) {
+		allPositive = false;
+		break;
+	} 
+}
+if (allPositive == true) {
+	console.log('All elements in the array are positive!');
+}
+else {
+	console.log('The array contains negative numbers.');
+}
+
+2. Едномерен масив наричаме назъбен, ако всеки елемент в масива е > от предишния и < от следващия. Напишете скрипт, който проверява дали даден масив от числа е назъбен.
+
+Решение:
+let arr2 = [-5,-4,-3,-2];
+let arr2 = [1,6,3,4,5,6];
+let biggerNum = false;
+for (let i = 0; i < arr2.length-1; i++) {
+	if (arr2[i] >= arr2[i + 1]){
+		biggerNum = true;
+		break;
+	}
+}
+if (biggerNum == true) {
+	console.log('The array isn\'t jagged!');
+} 
+else {
+	console.log('The array is jagged!');
+}
+
+3. Да се сортира масив от обекти в зависимост от броя на пропъртитата.
+
+Решение:
+let arr = [
+	{prop: 123, str: 'asdfgh'},
+	{prop: 123, str: 'asdfgh', firstName: 'Ivan'},
+	{prop: 6, str: 'asdfgh',firstName: 'Vasko'},
+	{prop: 6, str: 'asdfgh',firstName: 'Vasko', age: 30},
+	{prop: 563, str: 'asdfgh'},
+	{prop: 1456723, str: 'asdfgh'}
+];
+arr.sort(function (el1, el2) {
+	return Object.keys(el1).length - Object.keys(el2).length;
+});
+console.log(arr); 
+
+4. Напишете скрипт който да трие елементите от масив, които са 'null', '0', '""', 'false', 'undefined' and 'NaN'.
+
+Решение:
+
+let arr = [1,0,5,NaN,6,'hfgifg',10,'',null,20,false,13,17,undefined];
+for (let i = 0; i < arr.length; i++) {
+	if ((arr[i] == null) || (arr[i] == false) || (Number.isNaN(arr[i])) || (arr[i] == undefined) || (arr[i] === '') || (arr[i] === 0)) {
+		arr.splice(i,1);
+		i--;
+	}
+}
+console.log(arr);

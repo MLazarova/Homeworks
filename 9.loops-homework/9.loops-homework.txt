@@ -1,0 +1,71 @@
+1. Да се състави скрипт, който да намери броят цифри, тяхната сума, произведението и средната им стойност. Числото е 3456789.
+Решение: 
+let number = 3456789, tempDigit = 0, count = 0, sum = 0, mult = 1;
+while (number > 0 ) {
+	tempDigit = number % 10;
+	count += 1;
+	sum += tempDigit;
+	mult *= tempDigit;
+	number = Math.floor(number/10);
+}
+console.log('Number of digits:', count);
+console.log('Sum of digits:', sum);
+console.log('Product:', mult);
+console.log('Avarage value:', sum /count );
+
+2. Да се състави скрипт, който да изведе (console.log) в конзолата квадратите на всички естествени числа в интервала 1-100 по-малки или равни на числото 12.
+Решение 1:
+let n = 0;
+for ( var i = 1; i<=100; i++ ) {
+	n = Math.pow(i,2);
+	if ( n <= 12 ) {
+		console.log ('number:', i, 'result:', n);
+	}
+}
+Решение 2:
+let n = 0;
+for ( var i = 1; i<=100; i++ ) {
+	n = i*i;
+	if ( n <= 12 ) {
+		console.log ('number:', i, 'result:', n);
+	}
+}
+
+3. Да се състави скрипт, който изчислява общата сума от естествени числа, всяко от които се дели без остатък на 3, а общата им сума не надминава естественото число 150.
+Решение:
+let i = 3, sum = 0;
+while ( (sum + i) <= 150 ){
+	sum += i;
+	i += 3;
+}
+console.log('Sum:', sum);
+
+4. Да се състави скрипт, който прочита цялото число 12345768997 и извежда огледалното му.
+Решение 1: 
+let number = 12345768997, tempDigit = 0;
+let str = '';
+while (number > 0 ) {
+	tempDigit = number % 10;
+	number = Math.floor(number/10);
+	str += tempDigit.toString();
+}
+console.log(str);
+
+Решение 2:
+let number = 12345768997, tempDigit = 0, count = 0;
+while (number > 0 ) {
+	tempDigit = number % 10;
+	count += 1;
+	number = Math.floor(number/10);
+}
+
+number = 12345768997;
+let result = 0;
+
+while (number > 0 ) {
+	tempDigit = number % 10;
+	result += Math.pow(10,count - 1)*tempDigit;
+	count -= 1;
+	number = Math.floor(number/10);
+}
+console.log(result);
